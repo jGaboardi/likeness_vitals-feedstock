@@ -1,5 +1,5 @@
 {% set name = "likeness_vitals" %}
-{% set version = "1.4.7" %}
+{% set version = "1.4.9" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/likeness_vitals-{{ version }}.tar.gz
-  sha256: 4d4184624c026d47421dbaad2ae0a9f4a10f3ab4582e5760a6f78649b003e959
+  sha256: 2de340c525538026889c07b80fbdd88eafc44fa339ca050cdefd49f60fe45b72
 
 build:
   noarch: python
