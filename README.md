@@ -9,7 +9,7 @@ Package license: LicenseRef-UT-BATTELLE
 
 Summary: Shared utilities for the Likeness ecosystem
 
-Documentation: https://github.com/likeness-pop/likeness_vitals/
+Documentation: https://github.com/likeness-pop/likeness-vitals/
 
 Current build status
 ====================

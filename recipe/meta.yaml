@@ -1,5 +1,4 @@
 {% set name = "likeness_vitals" %}
-{% set org = "likeness-pop" %}
 {% set version = "1.4.9" %}
 {% set python_min = "3.11" %}
 
@@ -14,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -34,7 +33,7 @@ requirements:
 
 test:
   imports:
-    - {{ name }}
+    - likeness_vitals
   commands:
     - pip check
   requires:
@@ -42,13 +41,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/{{ org }}/
+  home: https://github.com/likeness-pop/
   summary: Shared utilities for the Likeness ecosystem
   license: LicenseRef-UT-BATTELLE
   license_file:
     - LICENSE
     - NOTICE
-  doc_url: https://github.com/{{ org }}/likeness-vitals/
+  doc_url: https://github.com/likeness-pop/likeness-vitals/
 
 extra:
   recipe-maintainers:
