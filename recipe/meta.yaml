@@ -48,7 +48,7 @@ about:
   license_file:
     - LICENSE
     - NOTICE
-  doc_url: https://github.com/{{ org }}/{{ name }}/
+  doc_url: https://github.com/{{ org }}/likeness-vitals/
 
 extra:
   recipe-maintainers:
