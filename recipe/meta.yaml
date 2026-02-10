@@ -1,4 +1,5 @@
 {% set name = "likeness_vitals" %}
+{% set org = "likeness-pop" %}
 {% set version = "1.4.9" %}
 {% set python_min = "3.11" %}
 
@@ -7,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/likeness_vitals-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2de340c525538026889c07b80fbdd88eafc44fa339ca050cdefd49f60fe45b72
 
 build:
@@ -33,7 +34,7 @@ requirements:
 
 test:
   imports:
-    - likeness_vitals
+    - {{ name }}
   commands:
     - pip check
   requires:
@@ -41,11 +42,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/likeness-pop/
-  summary: Shared utility functionality for Likeness modules
+  home: https://github.com/{{ org }}/
+  summary: Shared utilities for the Likeness ecosystem
   license: LicenseRef-UT-BATTELLE
-  license_file: LICENSE
-  doc_url: https://github.com/likeness-pop/likeness-vitals/
+  license_file:
+    - LICENSE
+    - NOTICE
+  doc_url: https://github.com/{{ org }}/{{ name }}/
 
 extra:
   recipe-maintainers:
